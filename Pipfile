@@ -7,6 +7,16 @@ name = "pypi"
 fastapi = "*"
 uvicorn = {extras = ["standard"], version = "*"}
 starlette = "*"
+python-multipart = "*"
+python-magic = "*"
+numpy = "*"
+opencv-python = "*"
+tensorflow = "*"
+cassandra-driver = "*"
+sklearn = "*"
+jupyter = "*"
+pandas = "*"
+matplotlib = "*"
 
 [dev-packages]
 

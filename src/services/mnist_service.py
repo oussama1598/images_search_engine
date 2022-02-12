@@ -13,7 +13,7 @@ def get_image_neighbors(encoded_image: np.array, neighbors: int = 10):
     neighbors = np.array([np.array(embedding) for embedding in mnist_engine.get_neighbors(encoded_image, neighbors)])
 
     return [
-        image.reshape(28, 28)
+        image.reshape(28, 28) * 255
         for image in mnist_engine.decode_images(neighbors)
     ]
 

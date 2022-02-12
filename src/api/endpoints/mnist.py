@@ -30,7 +30,7 @@ async def mnist_predict(file: UploadFile, neighbors: int = 10):
         )
 
     jpg_as_np = np.frombuffer(file_bytes, dtype=np.uint8)
-    uploaded_image = cv2.imdecode(jpg_as_np, cv2.IMREAD_GRAYSCALE)
+    uploaded_image = cv2.imdecode(jpg_as_np, cv2.IMREAD_GRAYSCALE) / 255
     encoded_image = mnist_service.encode_image(uploaded_image)[0]
 
     neighbors_images = mnist_service.get_image_neighbors(encoded_image, neighbors)

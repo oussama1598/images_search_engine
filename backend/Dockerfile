@@ -15,4 +15,4 @@ COPY ./src /code/backend/src
 COPY ./main.py /code/backend/main.py
 COPY ./.env /code/backend/.env
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "80"]

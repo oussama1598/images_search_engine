@@ -1,7 +1,7 @@
 import numpy as np
 
-from src.modules.mnist_engine import MnistEngine
-from src.settings import settings
+from backend.src.modules.mnist_engine import MnistEngine
+from backend.src.settings import settings
 
 mnist_engine = MnistEngine(
     encoder_path=settings.MNIST_ENCODER_PATH,

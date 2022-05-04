@@ -2,8 +2,8 @@ import numpy as np
 import pandas as pd
 from tensorflow import keras
 
-from src.db import cassandra_db
-from src.modules.logger import Logger
+from backend.src.db import cassandra_db
+from backend.src.modules.logger import Logger
 
 
 class MnistEngine:

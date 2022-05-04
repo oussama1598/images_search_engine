@@ -3,8 +3,8 @@ import os
 import numpy as np
 from keras.datasets import mnist
 
-from src.db import cassandra_db
-from src.modules.mnist_engine import MnistEngine
+from backend.src.db import cassandra_db
+from backend.src.modules.mnist_engine import MnistEngine
 
 
 def generate_embeddings():

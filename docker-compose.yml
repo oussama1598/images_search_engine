@@ -10,6 +10,20 @@ services:
     volumes:
       - cassandra-persistence:/bitnami
 
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - '9002:80'
+
+  web:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - '3000:80'
+
 volumes:
   cassandra-persistence:
     driver: local

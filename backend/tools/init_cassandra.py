@@ -1,4 +1,4 @@
-from src.db import cassandra_db
+from backend.src.db import cassandra_db
 
 if __name__ == '__main__':
     session = cassandra_db.get_session()

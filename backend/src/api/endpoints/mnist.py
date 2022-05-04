@@ -7,7 +7,7 @@ import numpy as np
 from fastapi import UploadFile
 from starlette.responses import JSONResponse
 
-from src.services import mnist_service
+from backend.src.services import mnist_service
 
 router = fastapi.APIRouter(
     prefix='/mnist'

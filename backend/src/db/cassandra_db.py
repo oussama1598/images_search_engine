@@ -3,7 +3,7 @@ from functools import lru_cache
 from cassandra.auth import PlainTextAuthProvider
 from cassandra.cluster import Cluster, Session
 
-from src.settings import settings
+from backend.src.settings import settings
 
 
 @lru_cache()

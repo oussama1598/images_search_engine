@@ -1,7 +1,7 @@
 import fastapi
 from starlette.responses import RedirectResponse
 
-from src.api.endpoints import mnist
+from backend.src.api.endpoints import mnist
 
 router = fastapi.APIRouter(
     prefix='/api/v1'

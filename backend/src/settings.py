@@ -14,7 +14,7 @@ class Settings(BaseSettings):
     MNIST_DECODER_PATH: str = os.path.join(os.getcwd(), './src/models/mnist/decoder.h5')
 
     class Config:
-        env_file = "../../.env"
+        env_file = "../.env"
 
 
 settings = Settings()

@@ -15,8 +15,8 @@ def generate_embeddings():
     x = np.reshape(x, (len(x), 28, 28, 1))
 
     mnist_engine = MnistEngine(
-        os.path.join(os.getcwd(), '../src/models/mnist/encoder.h5'),
-        os.path.join(os.getcwd(), '../src/models/mnist/encoder.h5')
+        os.path.join(os.getcwd(), './src/models/mnist/encoder.h5'),
+        os.path.join(os.getcwd(), './src/models/mnist/encoder.h5')
     )
 
     return mnist_engine.encode_images(x)

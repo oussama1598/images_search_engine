@@ -17,8 +17,9 @@ sklearn = "*"
 jupyter = "*"
 pandas = "*"
 matplotlib = "*"
+dvc = {extras = ["gdrive"], version = "*"}
 
 [dev-packages]
 
 [requires]
-python_version = "3.9"
+python_version = "3.10"

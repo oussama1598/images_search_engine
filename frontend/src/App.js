@@ -19,19 +19,17 @@ function App() {
 
         setLoading(true);
 
-
         const formData = new FormData();
         formData.append("file", event.target.files[0]);
 
-        axios.post("http://localhost:9002/api/v1/mnist/predict", formData, {
+        axios.post("http://redmoon-pc.local:9002/api/v1/mnist/predict", formData, {
             headers: {
                 "Content-Type": "multipart/form-data",
             }
         })
             .then(response => response.data)
             .then(imgs => setImages(imgs))
-
-        setLoading(false);
+            .then(() => setLoading(false));
     };
 
     return (<Grid direction="column" style={{height: "100vh"}}>

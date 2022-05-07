@@ -10,8 +10,8 @@ class Settings(BaseSettings):
     DB_USERNAME: str
     DB_PASSWORD: str
 
-    MNIST_ENCODER_PATH: str = os.path.join(os.getcwd(), './src/models/mnist/encoder.h5')
-    MNIST_DECODER_PATH: str = os.path.join(os.getcwd(), './src/models/mnist/decoder.h5')
+    MNIST_ENCODER_PATH: str = os.path.join(os.getcwd(), './backend/src/models/mnist/encoder.h5')
+    MNIST_DECODER_PATH: str = os.path.join(os.getcwd(), './backend/src/models/mnist/decoder.h5')
 
     class Config:
         env_file = "../.env"
